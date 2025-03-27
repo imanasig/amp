@@ -24,7 +24,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight mb-6">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">AMPLIFY</span> Your 
               <span className="relative ml-2">
-                Evaluation
+                Evaluation!
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 20" preserveAspectRatio="none">
                   <path d="M0,10 Q40,5 80,10 Q120,15 160,10 Q200,5 200,10" stroke="#3b82f6" strokeWidth="4" fill="none"/>
                 </svg>
@@ -51,21 +51,6 @@ export default function Home() {
                 See How It Works
                 <ChevronRight className="ml-1 h-5 w-5" />
               </Link>
-            </div>
-            
-            {/* Stats */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-              {[
-                { value: "99%", label: "Accuracy Rate" },
-                { value: "80%", label: "Time Saved" },
-                { value: "25K+", label: "Papers Evaluated" },
-                { value: "100+", label: "Institutions" }
-              ].map((stat, idx) => (
-                <div key={idx} className="p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
-                  <div className="text-2xl font-bold text-blue-600">{stat.value}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
@@ -186,54 +171,6 @@ export default function Home() {
                 <h3 className="text-lg font-semibold mb-2 text-gray-900">{benefit.title}</h3>
                 <p className="text-gray-600 text-sm flex-grow">{benefit.description}</p>
                 <div className="mt-4 h-1 w-12 bg-blue-100 rounded-full"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-4">
-              Trusted By Educators
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Educators Say</h2>
-            <p className="text-lg text-gray-600">
-              Hear from educators who have transformed their evaluation process with AMPLIFY.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                quote: "AMPLIFY has completely transformed how we evaluate student answers. What used to take days now takes hours, with even better accuracy.",
-                author: "Dr. Sarah Johnson",
-                role: "Professor of Computer Science, Tech University"
-              },
-              {
-                quote: "The consistency in grading that AMPLIFY provides has eliminated student complaints about unfair assessments. It's a game-changer for our department.",
-                author: "Prof. Michael Chen",
-                role: "Department Head, Engineering Faculty"
-              }
-            ].map((testimonial, index) => (
-              <div 
-                key={index}
-                className="p-8 rounded-2xl bg-white border border-gray-100 shadow-md"
-              >
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-gray-700 italic mb-6">&ldquo;{testimonial.quote}&rdquo;</p>
-                <div>
-                  <p className="font-semibold text-gray-900">{testimonial.author}</p>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
-                </div>
               </div>
             ))}
           </div>

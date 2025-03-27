@@ -55,15 +55,7 @@ export default function RootLayout({
                   <li><a href="/Evaluation" className="hover:text-blue-400 transition-colors">Evaluation</a></li>
                 </ul>
               </div>
-              <div>
-                <h4 className="font-medium mb-4">Contact</h4>
-                <p className="text-zinc-300 text-sm">
-                  Have questions? Reach out to our support team for assistance.
-                </p>
-                <a href="mailto:contact@amplify.edu" className="text-blue-400 text-sm hover:underline mt-2 inline-block">
-                  contact@amplify.edu
-                </a>
-              </div>
+              
             </div>
             <div className="border-t border-zinc-700 mt-8 pt-8 text-center text-zinc-400 text-sm">
               © {new Date().getFullYear()} AMPLIFY. All rights reserved.
